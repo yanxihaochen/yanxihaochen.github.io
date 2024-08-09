@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圣诞树</title>
+    <style>
+        /* Basic reset and full height */
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ffafbd, #ffc3a0); /* Soft gradient background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        /* Button styling */
+        .center-button {
+            font-size: 20px;
+            padding: 20px 40px;
+            background-color: #ffffff;
+            color: #ff758c;
+            border: 2px solid #ff758c;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            outline: none;
+        }
+        .center-button:hover {
+            background-color: #ff758c;
+            color: #ffffff;
+        }
+        /* Message styling */
+        .message {
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .sub-message {
+            font-size: 22px;
+            color: #ffffff;
+            margin-top: 20px;
+        }
+        /* Adding shadow to text for better readability */
+        .message, .sub-message {
+            text-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="message">桑桑公主，你想要的圣诞树来咯！</div>
+    <div class="button-container">
+        <button class="center-button" onclick="goToIndex()">点击接收你的圣诞树</button>
+    </div>
+    <div class="sub-message">还有音乐哟！</div>
+
+    <script>
+        function goToIndex() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
